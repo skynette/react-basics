@@ -7,7 +7,13 @@ const UseStateBasics = () => {
   const [text, setText] = useState("Random Default Value")
 
   const handleClick = () => {
-    setText("Hello New Text")
+    if (text === "Random Default Value"){
+      setText("Hello New Text")
+    }
+    else{
+      setText("Some other random title")
+    }
+    
   }
 
   return <div>
