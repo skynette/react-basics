@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { data } from '../../../data';
 
 const UseStateArray = () => {
+  
   const deleteItem = () =>{
     setPeople([])
   }
