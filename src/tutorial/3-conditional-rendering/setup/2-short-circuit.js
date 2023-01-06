@@ -13,8 +13,8 @@ const ShortCircuit = () => {
     <h1>value: {secondValue}</h1> */}
     <h1>{text || "josh"}</h1>
     {isError && <h1>An Error occurred</h1>}
-
-    <button className='btn' onClick={()=>setIsError(!isError)}>Toggle Error</button>
+    {isError ? <p>An Error occurred</p> : <p>We good to go...</p>}
+    <button className='btn' onClick={() => setIsError(!isError)}>Toggle Error</button>
   </>;
 };
 
